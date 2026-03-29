@@ -6,7 +6,7 @@ O projeto cobre todo o ciclo de dados — desde a extração e tratamento até a
 
 🎯 Objetivo: analisar padrões e gerar insights sobre distribuição de tipos, evolução de poder entre gerações e diferenças estatísticas entre categorias de Pokémon.
 
-### 🔹 Sobre o Dataset
+## 🔹 Sobre o Dataset
 
 O dataset contém informações de 721 Pokémon, incluindo formas alternativas e atributos de batalha.
 
@@ -44,8 +44,9 @@ O dataset contém informações de 721 Pokémon, incluindo formas alternativas e
 
 ---
 
-### 🔹 Arquitetura do Projeto
+## 🔹 Arquitetura do Projeto
 
+```
 Kaggle (CSV)
      ↓
 PostgreSQL (ETL + SQL)
@@ -53,6 +54,7 @@ PostgreSQL (ETL + SQL)
 Power BI (DAX + Modelagem)
      ↓
 Dashboard Interativo
+```
 
 Etapas:
 - Extração do dataset (CSV)
@@ -91,11 +93,11 @@ pokemon-data-analysis/
 
 ---
 
-### 🔹 ETL (PostgreSQL)
+## 🔹 ETL (PostgreSQL)
 
 O processo de ETL foi realizado inteiramente no PostgreSQL, garantindo qualidade e consistência dos dados antes da análise.
 
-## Principais Etapas
+### Principais Etapas
 
 - Criação da tabela no PostgreSQL
 - Importação do CSV (pgAdmin)
@@ -107,7 +109,7 @@ O processo de ETL foi realizado inteiramente no PostgreSQL, garantindo qualidade
 
 ---
 
-### 🔹 Dashboard (Power BI)
+## 🔹 Dashboard (Power BI)
 
 ![Dashboard Pokémon](docs/dashboard.gif)
 
@@ -117,7 +119,7 @@ O dashboard foi desenvolvido com foco em análise exploratória e storytelling d
 
 💡 Esses filtros permitem ao usuário analisar subconjuntos específicos, como: comparar atributos apenas de Pokémon lendários, explorar diferenças entre gerações, analisar desempenho por tipo
 
-## Página 1 - Visão Geral
+### Página 1 - Visão Geral
 
 ![Visão Geral](docs/dashboard_page1.png)
 
@@ -134,7 +136,7 @@ O dashboard foi desenvolvido com foco em análise exploratória e storytelling d
 - Proporção de Pokémon Mono-type e Dual-type | Gráfico de Pizza
 - Distribuição de Poder Total por Geração | Gráfico Boxplot
 
-## Página 2 - Análise de Stats
+### Página 2 - Análise de Stats
 
 ![Análise](docs/dashboard_page2.png)
 
