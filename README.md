@@ -1,16 +1,14 @@
 # 📊 Pokémon Analytics
 
-Projeto de **Análise de Dados** desenvolvido a partir do dataset **Pokemon with stats** (Kaggle), com o objetivo de explorar informações de Pokémon das Gerações 1 a 6. 
+Projeto de **Análise de Dados end-to-end** desenvolvido a partir do dataset *Pokemon with stats* (Kaggle), com o objetivo de explorar informações de Pokémon das Gerações 1 a 6. 
 
 O projeto cobre todo o ciclo de dados — desde a extração e tratamento até a visualização — utilizando PostgreSQL para ETL e Power BI para construção de dashboards interativos.
 
-🎯 Objetivo: gerar insights sobre distribuição de tipos, evolução de poder ao longo das gerações e diferenças entre categorias de Pokémon.
-
----
+🎯 Objetivo: analisar padrões e gerar insights sobre distribuição de tipos, evolução de poder entre gerações e diferenças estatísticas entre categorias de Pokémon.
 
 ### 🔹 Sobre o Dataset
 
-O dataset contém informações de 721 Pokémon, incluindo evoluções, formas alternativas e atributos de batalha e classificação.
+O dataset contém informações de 721 Pokémon, incluindo formas alternativas e atributos de batalha.
 
 📌 Colunas Originais
 - ID (#)
@@ -28,7 +26,7 @@ O dataset contém informações de 721 Pokémon, incluindo evoluções, formas a
 - Legendary
 
 📌 Colunas Criadas
-- special_category → Classificação dos Pokémon em: lendário, mítico, forma alternativ e  regular.
+- special_category → Classificação dos Pokémon em: lendário, mítico, forma alternativa e  regular.
 
 ---
 
@@ -45,7 +43,6 @@ O dataset contém informações de 721 Pokémon, incluindo evoluções, formas a
 - **Figma** → prototipação do layout do dashboard
 
 ---
-
 
 ### 🔹 Arquitetura do Projeto
 
@@ -81,11 +78,11 @@ pokemon-data-analysis/
 │   └── dashboard_pokemon.pbix
 │
 ├── docs/
-│   └── dashboard_layout
-│       └── Modelo1_Dashboard_Pokemon.png
-│       └── Modelo2_Dashboard_Pokemon.png
-│   └── dashboard_page1.png
-│   └── dashboard_page2.png
+│   ├── dashboard_layout/
+│   │   ├── Modelo1_Dashboard_Pokemon.png
+│   │   └── Modelo2_Dashboard_Pokemon.png
+│   ├── dashboard_page1.png
+│   ├── dashboard_page2.png
 │   └── dashboard.gif
 │ 
 └── README.md
@@ -114,17 +111,11 @@ O processo de ETL foi realizado inteiramente no PostgreSQL, garantindo qualidade
 
 ![Dashboard Pokémon](docs/dashboard.gif)
 
-O dashboard foi estruturado em duas páginas, cada uma com um objetivo analítico específico, e conta com filtros interativos globais, permitindo exploração dinâmica dos dados.
+O dashboard foi desenvolvido com foco em análise exploratória e storytelling de dados, permitindo identificar padrões e comparações de forma intuitiva.
 
-🎛️ Filtros disponíveis
-Tipo de Pokémon
-Categoria (Regular, Lendário, Mítico, Forma Alternativa)
-Geração
+- Filtros disponíveis: Tipo de Pokémon, Geração e Categoria
 
-💡 Esses filtros permitem ao usuário analisar subconjuntos específicos, como:
-comparar atributos apenas de Pokémon lendários
-explorar diferenças entre gerações
-analisar desempenho por tipo
+💡 Esses filtros permitem ao usuário analisar subconjuntos específicos, como: comparar atributos apenas de Pokémon lendários, explorar diferenças entre gerações, analisar desempenho por tipo
 
 ## Página 1 - Visão Geral
 
@@ -160,12 +151,11 @@ analisar desempenho por tipo
 
 ---
 
-
 ## 💡 Principais Insights
 
 ### Distribuição Geral
 
-- Água é o tipo mais comum, sendo o mais representado entre todas as gerações
+- O tipo Água é o mais comum, sendo o mais representado entre todas as gerações analisadas
 - A geração 5 possui o maior número de Pokémon
 - A maioria absoluta dos Pokémon são regulares/comuns (91,88%), enquanto lendários e míticos representam ~8%, confirmando sua raridade no universo pokémon
 - 51% dos Pokémon são dual-type, ou seja, possuem dois tipos elementares simultaneamente, o que amplia as possibilidades estratégicas em batalha
@@ -174,7 +164,6 @@ analisar desempenho por tipo
 - A média de Base Stat Total se mantém relativamente estável entre gerações
 - Não há evidência de aumento de poder significativo
 
-
 ### Categorias de Pokémon
 - Pokémon lendários possuem média de 643 de poder total, contra 417 dos regulares
 - Míticos seguem tendência semelhante, com alto desempenho
@@ -182,7 +171,39 @@ analisar desempenho por tipo
 ###  Formas Alternativas
 - Pokémon com múltiplas formas podem aparecer mais de uma vez em rankings
 - Cada forma possui atributos próprios, impactando diretamente o desempenho
-
-💡 Isso evidencia a importância de considerar granularidade na análise (nível de forma vs nível de espécie)
+- Isso evidencia a importância de considerar granularidade na análise (nível de forma vs nível de espécie)
 
 **Observação:** Para evitar distorções causadas por múltiplas formas de um mesmo Pokémon (ex: Mega Evoluções), algumas métricas utilizam contagem distinta baseada no número da Pokédex.
+
+---
+
+## 📌 Principais Perguntas Respondidas
+
+- Pokémon lendários são realmente mais fortes que os regulares?
+- Existe aumento de poder ao longo das gerações?
+- Quais tipos são mais predominantes?
+- Como os atributos (hp, ataque, defesa, velocidade) se distribuem entre categorias?
+
+---
+
+## 👩‍💻 Sobre mim
+
+Sou Tecnóloga em Sistemas para Internet em transição para a área de Dados, com foco em análise de dados.
+
+Possuo experiência com SQL (PostgreSQL), Python (Pandas) e Power BI, desenvolvendo projetos de ETL, análise exploratória (EDA) e criação de dashboards interativos.
+
+---
+
+🩷 Fique à vontade para explorar o projeto, dar feedback ou entrar em contato!
+
+---
+## 📫 Contato
+
+<p align="left">
+    <a href="https://www.linkedin.com/in/ana-carolina-itacarambi-araujo/" target="_blank">
+      <img 
+        src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" 
+        alt="LinkedIn"
+      />
+    </a>
+</p>
