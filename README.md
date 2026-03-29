@@ -1,6 +1,6 @@
 # 📊 Pokémon Analytics
 
-Projeto de **Análise de Dados** desenvolvido a partir do dataset **Pokemon with stats** (Kaggle), com o objetivo de explorar informações de Pokémons das Gerações 1 a 6. 
+Projeto de **Análise de Dados** desenvolvido a partir do dataset **Pokemon with stats** (Kaggle), com o objetivo de explorar informações de Pokémon das Gerações 1 a 6. 
 
 O projeto cobre todo o ciclo de dados — desde a extração e tratamento até a visualização — utilizando PostgreSQL para ETL e Power BI para construção de dashboards interativos.
 
