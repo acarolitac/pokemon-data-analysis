@@ -2,8 +2,6 @@
 
 Projeto de **Análise de Dados** desenvolvido a partir do dataset *Pokemon with stats* (Kaggle), com o objetivo de explorar informações de Pokémon das Gerações 1 a 6. 
 
-O projeto cobre todo o ciclo de dados, utilizando PostgreSQL para ETL e Power BI para construção de dashboards interativos.
-
 🎯 Objetivo: analisar padrões e gerar insights sobre distribuição de tipos, evolução de poder entre gerações e diferenças estatísticas entre categorias de Pokémon.
 
 ## 🔹 Sobre o Dataset
